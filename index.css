@@ -1,0 +1,306 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+.player{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper{
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.22)0px 15px 12px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.track-art{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    -moz-box-shadow:0px 6px 5px #ccc;
+    -webkit-box-shadow:0px 6px 5px #ccc;
+    box-shadow: 0px 6px 5px #ccc;
+    -moz-border-radius:190px;
+    -webkit-border-radius:190px;
+    border-radius: 190px;
+}
+.now-playing{
+    font-size: 1rem;
+}
+.track-name{
+    font-size: 2.5rem;
+}
+.track-artist{
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.active{
+    color: black;
+}
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track{
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+    opacity: 1.0;
+}
+.slider_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seek_slider,
+.volume_slider{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    height: 5px;
+    background: #83a9ff;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #3774ff;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.seek_slider:hover,
+.volume_slider:hover{
+    opacity: 1.0;
+}
+.seek_slider{
+    width: 60%;
+}
+.volume_slider{
+    width: 30%;
+}
+.current_time,
+.total-duration{
+    padding: 10px;
+}
+i.fa-volume-down,
+i.fa-volume-up{
+    padding: 10px;
+}
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward{
+    cursor: pointer;
+}
+.randomActive{
+    color: black;
+}
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+
+    }
+}
+/* .loader{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader, .stroke{
+    background: #f1f1f1;
+    height: 150%;
+    width: 20px;
+    border-radius: 50px;
+    margin: 0px 0px;
+    animation: animate 1.4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        height: 20%;
+        background: #4286f4;
+    }
+    100%{
+        height: 100%;
+    }
+} */
+.loader {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stroke {
+    width: 20px;
+    margin: 0 2px;
+    height: 40px; /* Initial height */
+    background: #4286f4; /* Initial background color */
+    border-radius: 50px;
+    animation: animate 1.4s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        height: 40px; /* Initial height */
+        background: #4286f4; /* Initial background color */
+    }
+    50% {
+        height: 100px; /* Max height for wave peak */
+        background: #83a9ff; /* Different background color for peak */
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0s;
+}
+
+/* Your existing CSS code here */
+
+/* Responsive adjustments for screens between 690px and 290px */
+@media (max-width: 690px) {
+    .wrapper {
+        padding: 15px; /* Adjust the padding for small screens */
+    }
+
+    .track-art {
+        height: 150px; /* Reduce the track art size */
+        width: 150px;
+    }
+
+    .track-name {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+
+    .track-artist {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    .slider_container {
+        flex-direction: column; /* Stack sliders vertically for small screens */
+    }
+
+    .seek_slider,
+    .volume_slider {
+        width: 100%; /* Full width for sliders on small screens */
+    }
+
+    .buttons {
+        flex-direction: row; /* Revert to horizontal layout for buttons */
+    }
+
+    .buttons > div {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .stroke {
+        width: 10px; /* Reduce the stroke width for small screens */
+        margin: 0 1px; /* Adjust the margin for smaller spacing */
+        height: 5px; /* Adjust the wave height for small screens */
+        border-radius: 25px; /* Adjust the border radius for smaller circles */
+    }
+
+    @keyframes animate {
+        0%, 100% {
+            height: 2px; /* Adjust the initial height for small screens */
+        }
+        50% {
+            height: 5px; /* Adjust the max height for small screens */
+        }
+    }
+}
+
+/* Responsive adjustments for screens below 290px */
+@media (max-width: 290px) {
+    .track-name {
+        font-size: 1rem; /* Further reduce font size for smaller screens */
+    }
+
+    .track-artist {
+        display: none; /* Hide artist name on very small screens */
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .buttons > div {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    .stroke {
+        width: 8px; /* Further reduce the stroke width */
+        margin: 0 1px; /* Adjust the margin for smaller spacing */
+        height: 3px; /* Further adjust the wave height */
+        border-radius: 15px; /* Further adjust the border radius */
+    }
+
+    @keyframes animate {
+        0%, 100% {
+            height: 1px; /* Adjust the initial height for very small screens */
+        }
+        50% {
+            height: 3px; /* Adjust the max height for very small screens */
+        }
+    }
+}
