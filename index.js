@@ -22,17 +22,74 @@ let updateTimer;
 
 const music_list = [
     {
-        img: 'https://c8.alamy.com/comp/RBN81F/dj-alan-walker-performing-live-at-tomorrowland-electronic-dance-music-festival-RBN81F.jpg',
-        name: 'The-Walkers',
-        artist: 'Alan-Walker',
-        music: 'music/Alan-Walker--The-Walkers-Unity-01.mp3'
+        img: 'https://pbs.twimg.com/media/F5_1kDvW0AAqwdZ.jpg',
+        name: 'La-pio-pio',
+        artist: 'Mohbad',
+        music: 'music/mohbad_lapio.mp3'
     },
     {
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDndxMfo8r5Fw3CWsOcNL46aovPNumFgrEjw&usqp=CAU',
-        name: 'Lonely At Top',
-        artist: 'Asake',
-        music: 'music/Asake.mp3'
+        img: 'https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages112/v4/60/0b/9a/600b9aa9-4bba-7e0b-2936-a6f854a7e4e3/044a40d1-2e70-401f-b64a-e8d2ddf59e94_file_cropped.png/375x375bb.jpg',
+        name: 'Beast&Peace',
+        artist: 'Mohbad',
+        music: 'music/Mohbad_beast.mp3'
+    },
+    {
+        img: 'https://www.the-sun.com/wp-content/uploads/sites/6/2023/09/EP_MOHBAD_BLOG_COMP-1.jpg?strip=all&quality=100&w=1500&h=1000&crop=1',
+        name: 'Ask about me',
+        artist: 'Mohbad',
+        music: 'music/mohbad_ask.mp3'
+    },
+    {
+        img: 'https://metro.co.uk/wp-content/uploads/2023/09/SEI_171387344-a86f-e1694591499540.jpg?quality=90&strip=all&zoom=1&resize=480%2C331',
+        name: 'Peace',
+        artist: 'Mohbad',
+        music: 'music/mohbad_p.mp3'
+    },
+    {
+        img: 'https://metro.co.uk/wp-content/uploads/2023/09/SEI_171387344-a86f-e1694591499540.jpg?quality=90&strip=all&zoom=1&resize=480%2C331',
+        name: 'Weekend vibes',
+        artist: 'Mohbad',
+        music: 'music/mohbad_weekend.mp3'
+    },
+    {
+        img: 'https://f5p3e9e4.stackpathcdn.com/wp-content/uploads/2023/09/Mohbad-4.jpg',
+        name: 'Komajesun',
+        artist: 'Mohbad ft Naira Marley',
+        music: 'music/mobanaira_koma.mp3'
+    },
+    {
+        img: 'https://i0.wp.com/www.six9ja.com/wp-content/uploads/2022/06/Mohbad.webp?fit=644%2C338&ssl=1',
+        name: 'Pariwo',
+        artist: 'Mohbad ft Bella Shmurda',
+        music: 'music/mobadbella.mp3'
+    },
+    {
+        img: 'https://i.ytimg.com/vi/-b6pKbo9Olk/mqdefault.jpg',
+        name: 'Ronaldo',
+        artist: 'Mohbad',
+        music: 'music/mohbad_ronaldo.mp3'
+    },
+    {
+        img:'https://i.ytimg.com/vi/-u4wDuQ-efs/maxresdefault.jpg',
+        name: 'kopor_ker',
+        artist: 'Mohbad ft Rexxie',
+        music: 'music/mohbad_kpk.mp3'
+    },
+    {
+        img:'https://i.ytimg.com/vi/VdY5Gzd54FY/maxresdefault.jpg',
+        name: 'Feel good',
+        artist: 'Mohbad',
+        music: 'music/mohbad_feel.mp3'
+    },
+    {
+        img:'https://tonpeak.com/wp-content/uploads/2023/04/Mohbad-Light-EP-600x470-1.jpg',
+        name: 'Sorry',
+        artist: 'Mohbad',
+        music: 'music/mohbad_sorry.mp3'
     }
+
+
+    
 ];
 loadTrack(track_index);
 

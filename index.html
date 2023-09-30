@@ -9,12 +9,14 @@
 </head>
 <body>
     <header>
-        <h1 style="font-weight: 900;font-size:40px;text-align:center;padding-bottom:30px;text-shadow:10px 10px 5px blue,10px 10px 5px red,10px 10px 5px yellow">
+        <h1 style="font-weight: 900;font-size:25px;text-align:center;padding-bottom:30px;text-shadow:10px 10px 5px blue,10px 10px 5px red,10px 10px 5px yellow">
            
-                CODEMaster Music Store
+                CODEMaster Tribute to Mohbad💓🔥
         
         </h1>
     </header>
+    <div class="alert" id="myAlert" style="position: fixed;">Show appreciation 8116405518 opay <span class="close-button" onclick="hideAlert()">&times;</span> </div>
+
         <div class="player">
             <div class="wrapper">
                 <div class="details">
@@ -76,5 +78,30 @@
         </div>
 
     <script src="index.js"></script>
+
+    <script>
+        // Function to show the alert
+        function showAlert() {
+            document.getElementById("myAlert").style.display = "block";
+        }
+
+        // Function to hide the alert
+        function hideAlert() {
+            document.getElementById("myAlert").style.display = "none";
+        }
+
+        // Show the alert initially
+        showAlert();
+
+        // Set an interval to show the alert every 3 minutes
+        setInterval(function () {
+            showAlert();
+
+            // Hide the alert after 5 seconds
+            setTimeout(function () {
+                hideAlert();
+            }, 5000); // 5 seconds (5000 milliseconds)
+        }, 180000); // 3 minutes (180000 milliseconds)
+    </script>
 </body>
 </html>

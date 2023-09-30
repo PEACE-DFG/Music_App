@@ -13,6 +13,9 @@ body{
     border: 1px solid transparent;
     padding: 30px;
     border-radius: 20px;
+    background:linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.8)),url('https://is1-ssl.mzstatic.com/image/thumb/AMCArtistImages112/v4/60/0b/9a/600b9aa9-4bba-7e0b-2936-a6f854a7e4e3/044a40d1-2e70-401f-b64a-e8d2ddf59e94_file_cropped.png/375x375bb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.22)0px 15px 12px;
 }
 
@@ -48,6 +51,25 @@ body{
 .track-artist{
     margin-top: 5px;
     font-size: 1.5rem;
+}
+ /* CSS for the alert */
+ .alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* CSS for the close button */
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
 }
 
 .buttons{
